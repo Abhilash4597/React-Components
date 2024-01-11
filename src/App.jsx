@@ -1,23 +1,45 @@
-import Button from "./Button"
+import Button from "./Button";
+import { GoBellFill } from "react-icons/go";
+import { CgDanger } from "react-icons/cg";
+import { IoIosWarning } from "react-icons/io";
+import { GiPlainCircle } from "react-icons/gi";
+import { FaWineBottle } from "react-icons/fa";
+
+
 
 function App() {
 
   return (
     <div>
       <div>
-        <Button primary>Click</Button>
+        <Button primary> 
+          <GoBellFill />
+          Click
+        </Button>
       </div>
       <div>
-        <Button secondary rounded outline>Click Me</Button>
+        <Button secondary rounded outline>
+          <CgDanger />
+          Click Me
+        </Button>
       </div>
       <div>
-        <Button danger>Click Me</Button>
+        <Button danger>
+          <IoIosWarning />
+          Click Me
+        </Button>
       </div>
       <div>
-        <Button warning>Click Me</Button>
+        <Button warning>
+          <GiPlainCircle />
+          Click Me
+        </Button>
       </div>
       <div>
-        <Button success>Click Me</Button>
+        <Button success>
+          <FaWineBottle />
+          Click Me
+        </Button>
       </div>
     </div>
   )
