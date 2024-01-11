@@ -8,7 +8,7 @@ function App() {
         <Button primary>Click</Button>
       </div>
       <div>
-        <Button secondary>Click Me</Button>
+        <Button secondary rounded outline>Click Me</Button>
       </div>
       <div>
         <Button danger>Click Me</Button>
