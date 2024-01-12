@@ -1,47 +1,26 @@
-import Button from "./components/Button";
-import { GoBellFill } from "react-icons/go";
-import { CgDanger } from "react-icons/cg";
-import { IoIosWarning } from "react-icons/io";
-import { GiPlainCircle } from "react-icons/gi";
-import { FaWineBottle } from "react-icons/fa";
-
+import Accordion from "./components/Accordion"
 
 
 function App() {
 
+  const items = [
+  {
+    label:'Can I use React on a Project',
+    content:'Yes you can use React in a project.Yes you can use React in a project.Yes you can use React in a project.Yes you can use React in a project.',
+  },
+  {
+    label:'Can I use JavaScript on a Project',
+    content:'Yes you can use React in a project.Yes you can use React in a project.Yes you can use React in a project.Yes you can use React in a project.',
+  },
+  {
+    label:'Can I use CSS on a Project',
+    content:'Yes you can use React in a project.Yes you can use React in a project.Yes you can use React in a project.Yes you can use React in a project.',
+  }]
+
   return (
-    <div>
-      <div>
-        <Button primary> 
-          <GoBellFill />
-          Click
-        </Button>
-      </div>
-      <div>
-        <Button secondary rounded outline>
-          <CgDanger />
-          Click Me
-        </Button>
-      </div>
-      <div>
-        <Button danger>
-          <IoIosWarning />
-          Click Me
-        </Button>
-      </div>
-      <div>
-        <Button warning>
-          <GiPlainCircle />
-          Click Me
-        </Button>
-      </div>
-      <div>
-        <Button success>
-          <FaWineBottle />
-          Click Me
-        </Button>
-      </div>
-    </div>
+    <>
+      <Accordion items={items} ></Accordion>
+    </>
   )
 }
 
