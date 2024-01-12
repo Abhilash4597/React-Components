@@ -2,7 +2,7 @@
 
 export default function Accordion( {items} ) {
 
-  let renderedItems = items.map((item)=>{
+  const renderedItems = items.map((item)=>{
     return (
     <div key={item.id}>
       <div>{item.label}</div>
@@ -10,6 +10,7 @@ export default function Accordion( {items} ) {
     </div>
     )
   })
+
   return (
     <div>{renderedItems}</div>
   )
