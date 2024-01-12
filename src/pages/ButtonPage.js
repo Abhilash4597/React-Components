@@ -1,4 +1,4 @@
-import Button from "./components/Button";
+import Button from "../components/Button";
 import { GoBellFill } from "react-icons/go";
 import { CgDanger } from "react-icons/cg";
 import { IoIosWarning } from "react-icons/io";
@@ -7,7 +7,7 @@ import { FaWineBottle } from "react-icons/fa";
 
 
 
-function App() {
+function ButtonPage() {
 
   return (
     <div>
@@ -45,4 +45,4 @@ function App() {
   )
 }
 
-export default App
+export default ButtonPage;
