@@ -1,8 +1,7 @@
 /* eslint-disable react/prop-types */
 import { useState } from "react"
 
-function DropDown( {options} ) {
-
+function DropDown( {options , onSelect , selection} ) {
     const [isOpen , setIsOpen] = useState(false);
 
     const handleDropDown = ()=>{
@@ -11,23 +10,25 @@ function DropDown( {options} ) {
 
     const handleClickedOption = (option)=>{
         setIsOpen(false)
-
-        console.log(option)
+        onSelect(option.label)
     }
 
     const renderedOptions = options.map((option)=>{
-
         return (
             <div onClick={()=>{handleClickedOption(option)}} key={option.value}>
                 {option.label}
             </div>
         )
     })
+
+    let content = 'Select...'
+    if(selection) {
+        content = selection;
+    }
+
   return (
     <div>
-        <div onClick={handleDropDown}>
-            Select...
-        </div>
+        <div onClick={handleDropDown}> {content} </div>
         {isOpen && <div>{renderedOptions}</div>}
     </div>
   )
