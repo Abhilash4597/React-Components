@@ -1,14 +1,18 @@
 /* eslint-disable react/prop-types */
-import { useEffect, useState } from "react"
+import { useEffect, useRef, useState } from "react"
 import { GoChevronDown } from "react-icons/go";
 import Panel from "./Panel";
 
 function DropDown( {options , onChange , value} ) {
     const [isOpen , setIsOpen] = useState(false);
+    
+    const divElement = useRef();
 
     useEffect(()=>{
         const handler = (event)=>{
-            console.log(event.target)
+            if(!divElement.current.contains(event.target)){
+                setIsOpen(false)
+            }
         }
 
         document.addEventListener('click',handler,true)
@@ -42,7 +46,7 @@ function DropDown( {options , onChange , value} ) {
     }
 
   return (
-    <div className="w-48 relative">
+    <div ref={divElement} className="w-48 relative">
         <Panel className="flex justify-between item-center cursor-pointer" onClick={handleDropDown}>
             {content}
             <GoChevronDown className="text-lg mt-1" />
