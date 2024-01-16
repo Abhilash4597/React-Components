@@ -10,6 +10,11 @@ function DropDown( {options , onChange , value} ) {
 
     useEffect(()=>{
         const handler = (event)=>{
+
+            if(!divElement.current){
+                return;
+            }
+
             if(!divElement.current.contains(event.target)){
                 setIsOpen(false)
             }
