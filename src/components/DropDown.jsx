@@ -1,10 +1,23 @@
 /* eslint-disable react/prop-types */
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import { GoChevronDown } from "react-icons/go";
 import Panel from "./Panel";
 
 function DropDown( {options , onChange , value} ) {
     const [isOpen , setIsOpen] = useState(false);
+
+    useEffect(()=>{
+        const handler = (event)=>{
+            console.log(event.target)
+        }
+
+        document.addEventListener('click',handler,true)
+
+        return ()=>{
+            document.removeEventListener('click',handler)
+        }
+
+    },[])
 
     const handleDropDown = ()=>{
         setIsOpen(!isOpen)
