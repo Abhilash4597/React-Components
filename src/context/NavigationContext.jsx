@@ -1,6 +1,9 @@
+/* eslint-disable react/prop-types */
 import { createContext } from "react";
 
-export default function NavigationContext({ children }) {
+const NavigationContext = createContext();
+
+export default function NavigationProvider({ children }) {
   return (
     <NavigationContext.Provide>
         {children}
