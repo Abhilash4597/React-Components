@@ -29,12 +29,12 @@ function DropDown( {options , onChange , value} ) {
     },[])
 
     const handleDropDown = ()=>{
-        setIsOpen(!isOpen)
+        setIsOpen(!isOpen);
     }
 
     const handleClickedOption = (option)=>{
-        setIsOpen(false)
-        onChange(option.label)
+        setIsOpen(false);
+        onChange(option.label);
     }
 
     const renderedOptions = options.map((option)=>{
