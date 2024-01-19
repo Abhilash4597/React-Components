@@ -1,15 +1,28 @@
 /* eslint-disable react/prop-types */
-import { createContext } from "react";
+import { createContext, useEffect, useState } from "react";
 
 const NavigationContext = createContext();
 
 export default function NavigationProvider({ children }) {
+    const[currentPath , setCurrentPath] = useState(window.location.pathname);
+
+    useEffect(()=>{
+        const handler = ()=>{
+            setCurrentPath(window.location.pathname);
+        }
     
+        window.addEventListener('popstate',handler);
+
+        return ()=>{
+            window.removeEventListener('popstate',handler)
+        }
+    },[])
 
   return (
-    <NavigationContext.Provide>
+    <NavigationContext.Provider value={{}}>
+        {currentPath}
         {children}
-    </NavigationContext.Provide>
+    </NavigationContext.Provider>
   )
 }
 
