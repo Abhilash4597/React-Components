@@ -1,7 +1,7 @@
 import Link from "./components/Link";
 import Route from "./components/Route";
-import Accordion from "./components/Accordion"
-import DropDown from "./components/DropDown"
+import AccordionPage from './pages/AccordionPage';
+import DropDownPage from './pages/DropdownPage';
 
 function App() {
 
@@ -10,11 +10,11 @@ function App() {
       <Link to='/Accordion'>Accordion</Link>
       <Link to='/DropDown'>Dropdown</Link>
 
-      <Route path='/accordion'>
-        <Accordion></Accordion>
+      <Route path='/Accordion'>
+        <AccordionPage></AccordionPage>
       </Route>
       <Route path='/DropDown'>
-        <DropDown></DropDown>
+        <DropDownPage></DropDownPage>
       </Route>
     </div>
     )
