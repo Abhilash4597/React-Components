@@ -10,11 +10,11 @@ function App() {
     <div>
       <SideBar />
       <div>
-        <Route path='/accordion'>
-          <AccordionPage></AccordionPage>
-        </Route>
         <Route path='/'>
           <DropDownPage></DropDownPage>
+        </Route>
+        <Route path='/accordion'>
+          <AccordionPage></AccordionPage>
         </Route>
         <Route path='/buttons'>
           <ButtonPage></ButtonPage>

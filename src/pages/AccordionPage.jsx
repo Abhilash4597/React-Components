@@ -1,5 +1,7 @@
 import Accordion from "../components/Accordion"
 
+import Button from "../components/Button"
+
 
 function AccordionPage() {
 
@@ -23,6 +25,10 @@ function AccordionPage() {
   return (
     <>
       <Accordion items={items} ></Accordion>
+      <Button primary rounded> 
+          {/* <GoBellFill /> */}
+          Click Me
+        </Button>
     </>
   )
 }

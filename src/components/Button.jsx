@@ -1,5 +1,5 @@
 /* eslint-disable react/prop-types */
-import classNames from "classnames"
+import classNames from "classnames";
 
 export default function Button({ 
   children,
