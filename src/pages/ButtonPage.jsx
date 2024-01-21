@@ -6,15 +6,13 @@ import { GiPlainCircle } from "react-icons/gi";
 import { FaWineBottle } from "react-icons/fa";
 
 
-
 function ButtonPage() {
-
   return (
     <div>
       <div>
-        <Button primary> 
+        <Button primary rounded> 
           <GoBellFill />
-          Click
+          Click Me
         </Button>
       </div>
       <div>
