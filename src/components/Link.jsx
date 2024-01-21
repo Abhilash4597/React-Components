@@ -2,9 +2,9 @@
 import { useContext } from "react";
 import NavigationContext from "../context/NavigationContext";
 
-export default function Link({to , children}){
+function Link({to , children}){
 
-    const {navigate} = useContext(NavigationContext)
+    const { navigate } = useContext(NavigationContext)
 
     const handleClick = (event)=>{
         event.preventDefault();
@@ -14,3 +14,4 @@ export default function Link({to , children}){
     return <a onClick={handleClick}>{children}</a>
 }
 
+export default Link;
