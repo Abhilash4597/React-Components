@@ -1,10 +1,9 @@
 /* eslint-disable react/prop-types */
-import { useContext } from "react"
-import NavigationContext from "../context/NavigationContext"
+import useNavigation from "../Hooks/use-navigation";
 
 export default function Route({path , children}) {
 
-    const {currentPath} = useContext(NavigationContext)
+    const {currentPath} = useNavigation();
 
     if(path===currentPath){
         return children;
