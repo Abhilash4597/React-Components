@@ -1,5 +1,5 @@
 import Accordion from "../components/Accordion"
-
+import { GoBellFill } from "react-icons/go";
 import Button from "../components/Button"
 
 
@@ -26,7 +26,7 @@ function AccordionPage() {
     <>
       <Accordion items={items} ></Accordion>
       <Button primary rounded> 
-          {/* <GoBellFill /> */}
+          <GoBellFill />
           Click Me
         </Button>
     </>

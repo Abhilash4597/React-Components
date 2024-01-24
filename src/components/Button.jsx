@@ -13,7 +13,7 @@ export default function Button({
   ...rest
 })  {
 
-  const classes = classNames( ...rest.className,
+  const classes = classNames(rest.className && [...rest.className],
     'flex items-center gap-x-1 px-3 py-1.5 border',
     {
       'border-blue-500 bg-blue-500 text-white' : primary,

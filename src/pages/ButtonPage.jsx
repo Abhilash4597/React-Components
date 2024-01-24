@@ -16,7 +16,7 @@ function ButtonPage() {
         </Button>
       </div>
       <div>
-        <Button secondary rounded outline>
+        <Button secondary rounded>
           <CgDanger />
           Click Me
         </Button>
