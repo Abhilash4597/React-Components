@@ -12,31 +12,31 @@ function ButtonPage() {
       <div>
         <Button primary rounded> 
           <GoBellFill />
-          Click Me
+          Primary
         </Button>
       </div>
       <div>
         <Button secondary rounded>
           <CgDanger />
-          Click Me
+          Secondary
         </Button>
       </div>
       <div>
         <Button danger>
           <IoIosWarning />
-          Click Me
+          Danger
         </Button>
       </div>
       <div>
         <Button warning>
           <GiPlainCircle />
-          Click Me
+          Warning
         </Button>
       </div>
       <div>
         <Button success>
           <FaWineBottle />
-          Click Me
+          Success
         </Button>
       </div>
     </div>
