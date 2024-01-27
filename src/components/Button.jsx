@@ -11,7 +11,7 @@ export default function Button({
   outline,
   rounded,
   ...rest
-})  {
+  }) {
 
   const classes = classNames(rest.className && [...rest.className],
     'flex items-center gap-x-1 px-3 py-1.5 border',
@@ -29,6 +29,7 @@ export default function Button({
       'text-red-500' : outline && danger,
       'text-yellow-500' : outline && warning,
     })
+    
       return (
         <button {...rest} className= {classes}> {children} </button>
       )

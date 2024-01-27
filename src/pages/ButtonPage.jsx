@@ -5,7 +5,6 @@ import { IoIosWarning } from "react-icons/io";
 import { GiPlainCircle } from "react-icons/gi";
 import { FaWineBottle } from "react-icons/fa";
 
-
 function ButtonPage() {
   return (
     <div>

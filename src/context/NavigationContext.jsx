@@ -23,7 +23,6 @@ const NavigationProvider = ({ children }) => {
         setCurrentPath(to)
     }
 
-
   return (
     <NavigationContext.Provider value={{currentPath , navigate}}>
         {children}

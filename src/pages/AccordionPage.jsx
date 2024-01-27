@@ -2,7 +2,6 @@ import Accordion from "../components/Accordion"
 import { GoBellFill } from "react-icons/go";
 import Button from "../components/Button"
 
-
 function AccordionPage() {
 
   const items = [

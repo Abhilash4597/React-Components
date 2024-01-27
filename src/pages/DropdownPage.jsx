@@ -1,7 +1,6 @@
 import { useState } from "react"
 import DropDown from "../components/DropDown"
 
-
 function DropdownPage() {
 
   const [selection,SetSelection] = useState('');
