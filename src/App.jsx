@@ -1,27 +1,26 @@
-import SideBar from './components/Sidebar';
-import Route from './components/Route';
-import AccordionPage from './pages/AccordionPage';
-import DropDownPage from './pages/DropdownPage';
-import ButtonPage from './pages/ButtonPage';
+import SideBar from "./components/Sidebar";
+import Route from "./components/Route";
+import AccordionPage from "./pages/AccordionPage";
+import DropDownPage from "./pages/DropdownPage";
+import ButtonPage from "./pages/ButtonPage";
 
 function App() {
-
   return (
     <div>
       <SideBar />
       <div>
-        <Route path='/'>
+        <Route path="/">
           <DropDownPage></DropDownPage>
         </Route>
-        <Route path='/accordion'>
+        <Route path="/accordion">
           <AccordionPage></AccordionPage>
         </Route>
-        <Route path='/buttons'>
+        <Route path="/buttons">
           <ButtonPage></ButtonPage>
         </Route>
       </div>
     </div>
-    )
+  );
 }
 
-export default App
+export default App;

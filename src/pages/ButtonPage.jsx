@@ -9,7 +9,7 @@ function ButtonPage() {
   return (
     <div>
       <div>
-        <Button primary rounded> 
+        <Button primary rounded>
           <GoBellFill />
           Primary
         </Button>
@@ -39,7 +39,7 @@ function ButtonPage() {
         </Button>
       </div>
     </div>
-  )
+  );
 }
 
 export default ButtonPage;
